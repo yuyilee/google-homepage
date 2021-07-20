@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .mainpage {
     height: 70vh;
     display: grid;
@@ -6,7 +10,23 @@
 }
 
 .searchbox {
+    display: flex;
     margin: 20px auto;
+}
+
+.material-icons {
+    padding: 10px;
+    color: gray;
+    min-width: 50px;
+    text-align: center;
+    position: relative;
+}
+.search {
+    left: 55px;
+}
+.mic_none {
+    right: 55px;
+    color: lightskyblue
 }
 
 .buttons {
@@ -14,4 +34,35 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
+
+.btn {
+    border: 0px;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.srchbtn:hover {
+    border: 1px solid gray;
+}
+
+.srchbtn:active {
+    border: 1px solid blue;
+}
+
+#search {
+    font-size: 1.2em;
+    font-weight: 100;
+    padding: 10px 50px 10px 50px;
+    width: 40vw;
+    min-width: 400px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+#search:hover {
+    box-shadow: 0 0 5px gray;
+}
+
 
