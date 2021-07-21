@@ -1,5 +1,16 @@
 * {
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .mainpage {
@@ -65,4 +76,38 @@
     box-shadow: 0 0 5px gray;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    background: rgb(233, 233, 233);
+    box-shadow: 0 0 5px darkgray;
+}
 
+.footer_left ul{
+    display: flex;
+    padding: 10px;
+}
+
+.footer_left li {
+    padding-left: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(94, 94, 94)
+}
+
+.footer_right ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.footer_right li {
+    padding-right: 30px;
+}
