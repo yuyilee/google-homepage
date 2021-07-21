@@ -53,6 +53,13 @@ a:hover {
     font-weight: 100;
 }
 
+.signbtn {
+    color: white;
+    background: dodgerblue;
+    padding: 10px 20px;
+    font-weight: 900;
+}
+
 .srchbtn:hover {
     border: 1px solid gray;
 }
@@ -76,6 +83,43 @@ a:hover {
     box-shadow: 0 0 5px gray;
 }
 
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_left ul {
+    display: flex;
+    padding: 10px;
+}
+
+.nav_left li {
+    padding-left: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+
+.nav_right ul {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 10px;
+}
+
+.nav_right li {
+    padding-right: 30px;
+    align-self: center;
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -90,6 +134,7 @@ footer {
 
 .footer_left ul{
     display: flex;
+    align-items: center;
     padding: 10px;
 }
 
@@ -105,6 +150,7 @@ footer a {
 .footer_right ul{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 10px;
 }
 
